@@ -1,6 +1,6 @@
 # Next.js GitHub Pages
 
-Deploy Next.js to GitHub Pages with GitHub Actions. [View the deployed app](https://gregrickaby.github.io/nextjs-github-pages/) 🚀
+Deploy Next.js to GitHub Pages with GitHub Actions. [View the deployed app](https://gregrickaby.github.io/portfolio/) 🚀
 
 > ⚠️ Heads up! GitHub Pages _does not_ support serverless or edge functions. This means dynamic functionality will be disabled. See all the [unsupported features](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#unsupported-features).
 
@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/nextjs-github-pages",
+  basePath: "/portfolio",
 
   /**
    * Disable server-based image optimization. Next.js does not support
@@ -67,11 +67,11 @@ Next, you will need to add the base path to images in `page.tsx` file. This is r
 
 1. Open `app/page.tsx`
 2. Find the `Image` components
-3. Add `/nextjs-github-pages/` (or the slug of your GitHub repository) to the `src` prop:
+3. Add `/portfolio/` (or the slug of your GitHub repository) to the `src` prop:
 
 ```tsx
 <Image
-  src="/nextjs-github-pages/vercel.svg"
+  src="/portfolio/vercel.svg"
   alt="Vercel Logo"
   className={styles.vercelLogo}
   width={100}
@@ -92,10 +92,10 @@ Now that Next.js is configured, you need to set up your GitHub repository to dep
 
 ### Setup GitHub Action
 
-This is where the magic happens! This [workflow file](https://github.com/gregrickaby/nextjs-github-pages/blob/main/.github/workflows/deploy.yml) will automatically build and deploy the app when you push to the `main` branch.
+This is where the magic happens! This [workflow file](https://github.com/gregrickaby/portfolio/blob/main/.github/workflows/deploy.yml) will automatically build and deploy the app when you push to the `main` branch.
 
 1. Create `.github/workflows/deploy.yml` file
-2. Paste the contents of <https://github.com/gregrickaby/nextjs-github-pages/blob/main/.github/workflows/deploy.yml>
+2. Paste the contents of <https://github.com/gregrickaby/portfolio/blob/main/.github/workflows/deploy.yml>
 3. Save the `deploy.yml` file
 
 ### Enable GitHub Pages
@@ -120,6 +120,6 @@ You should see your site deployed to GitHub Pages in a few minutes. 🚀
 
 ## Wrap up
 
-Thanks for reading and I hope this helps. If you noticed someting wrong, please [open an issue](https://github.com/gregrickaby/nextjs-github-pages/issues). Cheers! 🍻
+Thanks for reading and I hope this helps. If you noticed someting wrong, please [open an issue](https://github.com/gregrickaby/portfolio/issues). Cheers! 🍻
 
 ---
