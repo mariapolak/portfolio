@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+// import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from './navbar'
 import Footer from './footer'
 
-const ibmPlexMono = IBM_Plex_Mono({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+// const ibmPlexMono = IBM_Plex_Mono({
+//   weight: ["400", "500", "600", "700"],
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",

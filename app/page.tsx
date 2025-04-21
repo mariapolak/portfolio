@@ -7,6 +7,13 @@ export default function Home() {
         <div className="bg-gray-100 dark:bg-gray-900 dark:text-white flex items-center justify-center h-screen">
           Maria Klopot Polak
         </div>
+        <Image
+                className="rounded"
+                src="/portfolio/me.jpeg"
+                alt="me"
+                width={1024}
+                height={768}
+              />
       </div>
       {/* <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
         <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
@@ -19,13 +26,7 @@ export default function Home() {
         <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
           <div className="h-48 flex flex-wrap content-center">
             <div>
-              <Image
-                className="rounded"
-                src="/portfolio/me.jpeg"
-                alt="me"
-                width={1024}
-                height={768}
-              />
+              
             </div>
           </div>
         </div>
