@@ -15,18 +15,19 @@ export default function Projects(props: { id: string }) {
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
                     direction={1} 
-                    link="https://www.ocs.audio/">   
+                    link="https://www.ocs.audio/"
+                >   
                     <Image
-                            className="lg:w-2/5 rounded-xl mx-5"
-                            src="/portfolio/plugin1_1.png"
-                            alt="ocs"
-                            width={3440}
-                            height={2171}
-                        />
+                        className="lg:w-2/5 rounded-xl mx-5"
+                        src="/portfolio/plugin1_1.png"
+                        alt="ocs"
+                        width={3440}
+                        height={2171}
+                    />
                 </ProjectVST>
 
                 {/* Pancz */}
-                {/* <ProjectVST 
+                <ProjectVST 
                     id="Pancz" 
                     title="Pancz" 
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -36,50 +37,29 @@ export default function Projects(props: { id: string }) {
                     <Image
                             className="lg:w-2/5 rounded-xl mx-5"
                             src="/portfolio/plugin2.png"
-                            alt="ocs"
+                            alt="pancz"
                             width={3840}
                             height={2881}
                         />
-                </ProjectVST> */}
-                <div id="Pancz" className="flex flex-col w-6/7 bg-primary rounded-xl">
-                    <div className="flex flex-col lg:flex-row items-center py-5 px-3">
-                    <Image
-                            className="lg:w-2/5 rounded-xl mx-5"
-                            src="/portfolio/plugin2.png"
-                            alt="ocs"
-                            width={3840}
-                            height={2881}
-                        />
-                        <p className="text-justify text-xs w-full">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.
-                        </p>
-                        <h3 className="lg:rotate-90 text-4xl whitespace-nowrap my-5 lg:mx-[-20]">Pancz</h3>
-                    </div>
-                </div>
+                </ProjectVST>
+                
                 {/* Spacer */}
-                <div id="Spacer" className="flex flex-col w-6/7 bg-primary rounded-xl">
-                    <div className="flex flex-col lg:flex-row items-center py-5 px-3">
-                        <h3 className="lg:-rotate-90 text-4xl whitespace-nowrap my-5 lg:mx-[-20]">Spacer</h3>
-                        <p className="text-justify text-xs w-full">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.
-                        </p>
-                        <Image
+                <ProjectVST 
+                    id="Spacer" 
+                    title="Spacer" 
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
+                    direction={1} 
+                    link="https://www.spacer.audio/"
+                >   
+                    <Image
                             className="lg:w-2/5 rounded-xl mx-5"
                             src="/portfolio/plugin3.png"
                             alt="ocs"
                             width={16}
                             height={9}
                         />
-                    </div>
-                </div>
+                </ProjectVST>
             </div>
 
         </section>
