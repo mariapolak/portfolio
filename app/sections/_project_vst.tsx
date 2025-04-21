@@ -1,5 +1,5 @@
 export default function ProjectVST(prop: { id: string, title: string, description: string, image: string, direction: 1 | -1, link?: string, children: React.ReactNode }) {
-    var isLink = prop.link !== undefined && prop.link !== null && prop.link !== "" ? true : false;
+    // var isLink = prop.link !== undefined && prop.link !== null && prop.link !== "" ? true : false;
     return (
         <div id={prop.id} className="flex flex-col w-6/7 bg-primary rounded-xl">
             {prop.direction === 1 ? (
