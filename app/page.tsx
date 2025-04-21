@@ -6,10 +6,10 @@ import Projects from "./sections/projects";
 export default function Home() {
   return (
     <section>
-      <div className="flex flex-col lg:px-[15%]"> 
-        <Hero id="home"/>
-         <About id="about"/>
-         <Projects id="projects"/>
+      <div className="flex flex-col lg:px-[15%] mb-[10rem]">
+        <Hero id="home" />
+        <About id="about" />
+        <Projects id="projects" />
       </div>
     </section>
   );

@@ -20,9 +20,11 @@ export default function Navbar() {
         <div>
             <div className="lg:hidden">
                 {/* Icon for Mobile Menu */}
-                <div className="fixed top-0 right-0 p-4">
+                <div className="fixed top-0 right-0 p-4  z-50">
                     <button
-                        className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center 
+                        align-middle text-xs font-medium uppercase text-inherit
+                        transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                         onClick={toggleMobileMenu}
                         type="button">
                         <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">

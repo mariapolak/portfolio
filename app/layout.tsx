@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 export const metadata: Metadata = {
   title: "Portfolio | Maria Polak",
@@ -18,9 +18,9 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
