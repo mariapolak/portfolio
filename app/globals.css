@@ -3,7 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
   --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+}
+
+@theme {
+  --color-primary: var(--color-gray-100);
+  --color-secondary: var(--color-amber-500);
 }
 
 @media (prefers-color-scheme: dark) {
