@@ -1,0 +1,27 @@
+export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
+    return (
+        <div id={prop.id} className="flex flex-col w-6/7 bg-primary rounded-xl">
+            <div className="flex flex-col md:flex-row items-center gap-3 p-5 md:py-5 md:px-3">
+                {prop.children}
+            </div>
+        </div>
+    )
+}
+
+export function ProjectVSTHeaderRotated({ title, direction }: { title: string, direction: 1 | -1 }) {
+    return (
+        <h3 className={`text-4xl whitespace-nowrap my-5 ${direction === 1 ? "rotate-90" : "-rotate-90"} mx-[-20]`}>{title}</h3>
+    )
+}
+
+export function ProjectVSTHeader({ title }: { title: string }) {
+    return (
+        <h3 className="text-xl">{title}</h3>
+    )
+}
+
+export function ProjectVSTDescription({ description }: { description: string }) {
+    return (
+        <p className="text-justify text-xs w-full">{description}</p>
+    )
+}
