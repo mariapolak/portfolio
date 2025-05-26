@@ -29,7 +29,10 @@ export default function Projects(props: { id: string }) {
                             title="OCS-45"
                             direction={-1}></ProjectVSTHeaderRotated>
                     </div>
-                    <div className="hidden md:block"><ProjectVSTDescription description={panczDescription}></ProjectVSTDescription></div>
+                    <div className="hidden md:block"><ProjectVSTDescription
+                        description={panczDescription}
+                        link="portfolio/vst/ocs-45"
+                    ></ProjectVSTDescription></div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
                         src="/portfolio/plugins/plugin1.png"
@@ -39,7 +42,10 @@ export default function Projects(props: { id: string }) {
                     />
                     <div className="md:hidden">
                         <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
-                        <ProjectVSTDescription description={panczDescription}></ProjectVSTDescription>
+                        <ProjectVSTDescription
+                            description={panczDescription}
+                            link="/portfolio/vst/ocs-45"
+                        ></ProjectVSTDescription>
                     </div>
                 </ProjectVST>
 
@@ -58,7 +64,9 @@ export default function Projects(props: { id: string }) {
                             title="Pancz"></ProjectVSTHeader>
                     </div>
                     <ProjectVSTDescription
-                        description={panczDescription}></ProjectVSTDescription>
+                        description={panczDescription}
+                        link="/portfolio/vst/pancz">
+                    </ProjectVSTDescription>
                     <div className="hidden md:block">
                         <ProjectVSTHeaderRotated
                             title="Pancz"
@@ -75,7 +83,9 @@ export default function Projects(props: { id: string }) {
                             title="Spacer"
                             direction={-1}></ProjectVSTHeaderRotated>
                     </div>
-                    <div className="hidden md:block"><ProjectVSTDescription description={panczDescription}></ProjectVSTDescription></div>
+                    <div className="hidden md:block"><ProjectVSTDescription 
+                    description={panczDescription} 
+                    link="/portfolio/vst/spacer"></ProjectVSTDescription></div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
                         src="/portfolio/plugins/plugin3.png"
@@ -85,7 +95,9 @@ export default function Projects(props: { id: string }) {
                     />
                     <div className="md:hidden">
                         <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
-                        <ProjectVSTDescription description={panczDescription}></ProjectVSTDescription>
+                        <ProjectVSTDescription 
+                        description={panczDescription} 
+                        link="/portfolio/vst/spacer"></ProjectVSTDescription>
                     </div>
                 </ProjectVST>
 
@@ -107,7 +119,9 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="STN-based Pitch-Shifting" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/stn"
+                        />
 
                     </ProjectUni>
                     {/* Hand-Controlled GReverb */}
@@ -125,7 +139,10 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Granular Hands" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/greverb"
+                        />
+
                     </ProjectUni>
 
 
@@ -145,8 +162,9 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Banjo Physical Model" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-                        <SeeMoreButton className="w-full flex justify-end" link="/portfolio/hobby/banjo" />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/banjo"
+                        />
                     </ProjectUni>
 
 
@@ -165,7 +183,10 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Timbre Toys" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/timbretoys"
+                        />
+
                     </ProjectUni>
                     {/* Roughness */}
                     <ProjectUni
@@ -182,7 +203,10 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Vocal Distortion" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/roughness"
+                        />
+
                     </ProjectUni>
                     {/* Gluphone */}
                     <ProjectUni
@@ -199,7 +223,10 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Gluphone" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/gluphone"
+                        />
+
                     </ProjectUni>
 
                     {/* AIvsHuman Emotions */}
@@ -217,7 +244,10 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Emotions in AI-generated music" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/ai_hum"
+                        />
+
                     </ProjectUni>
                     {/* Convolutional Instrument Recognition System */}
                     <ProjectUni
@@ -234,7 +264,9 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniHeader title="Convolutional Instrument Recognition System" />
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            link="/portfolio/hobby/mlme"
+                        />
                     </ProjectUni>
                 </div>
 
@@ -254,7 +286,9 @@ export default function Projects(props: { id: string }) {
                     <ProjectDevHeader title="ıntakewıse" />
                     <ProjectDevDescription
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        link="/portfolio/commercial/intakewise"
+                    />
                 </ProjectDev>
             </div>
         </section>

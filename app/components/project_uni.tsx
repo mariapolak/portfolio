@@ -1,3 +1,5 @@
+import { SeeMoreButton } from "./see_more_button"
+
 export function ProjectUni(prop: { id: string, className?: string, children: React.ReactNode }) {
     return (
         <div id={prop.id} className={`flex flex-col bg-primary rounded-xl ${prop.className}`}>
@@ -8,14 +10,16 @@ export function ProjectUni(prop: { id: string, className?: string, children: Rea
     )
 }
 
-export function ProjectUniHeader({title}: {title: string}) {
+export function ProjectUniHeader({ title }: { title: string }) {
     return (
         <h3 className="text-xl">{title}</h3>
     )
 }
 
-export function ProjectUniDescription({description}: {description: string}) {
+export function ProjectUniDescription({ description, link }: { description: string, link: string }) {
     return (
-        <p className="text-justify text-xs w-full">{description}</p>
+        <span className="text-justify text-xs w-full">{description}
+            <SeeMoreButton className="inline" link={link} />
+        </span>
     )
 }

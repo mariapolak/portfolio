@@ -1,7 +1,9 @@
+import { SeeMoreButton } from "./see_more_button"
+
 export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
     return (
         <div id={prop.id} className="flex flex-col w-6/7 bg-primary rounded-xl">
-            <div className="flex flex-col md:flex-row items-center gap-3 p-5 md:py-5 md:px-3">
+            <div className="flex flex-col md:flex-row items-center gap-3 p-5 md:py-5 md:px-3 ">
                 {prop.children}
             </div>
         </div>
@@ -20,8 +22,10 @@ export function ProjectVSTHeader({ title }: { title: string }) {
     )
 }
 
-export function ProjectVSTDescription({ description }: { description: string }) {
+export function ProjectVSTDescription({ description, link }: { description: string, link: string }) {
     return (
-        <p className="text-justify text-xs w-full">{description}</p>
+        <span className="text-justify text-xs w-full">{description}
+            <SeeMoreButton className="inline" link={link} />
+        </span>
     )
 }
