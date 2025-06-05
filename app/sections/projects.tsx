@@ -36,7 +36,7 @@ export default function Projects(props: { id: string }) {
                     </div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
-                        src="/portfolio/plugins/plugin1.png"
+                        src="/plugins/plugin1.png"
                         alt="ocs"
                         width={3440}
                         height={2171}
@@ -45,7 +45,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
                         <ProjectVSTDescription
                             description={panczDescription}
-                            link="/portfolio/vst/ocs-45"
+                            link="/vst/ocs-45"
                         ></ProjectVSTDescription>
                     </div>
                 </ProjectVST>
@@ -55,7 +55,7 @@ export default function Projects(props: { id: string }) {
                     id="Pancz">
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
-                        src="/portfolio/plugins/plugin2.png"
+                        src="/plugins/plugin2.png"
                         alt="pancz"
                         width={3840}
                         height={2881}
@@ -66,7 +66,7 @@ export default function Projects(props: { id: string }) {
                     </div>
                     <ProjectVSTDescription
                         description={panczDescription}
-                        link="/portfolio/vst/pancz">
+                        link="/vst/pancz">
                     </ProjectVSTDescription>
                     <div className="hidden md:flex">
                         <ProjectVSTHeaderRotated
@@ -86,10 +86,10 @@ export default function Projects(props: { id: string }) {
                     </div>
                     <div className="hidden md:flex text-justify"><ProjectVSTDescription
                         description={panczDescription}
-                        link="/portfolio/vst/spacer"></ProjectVSTDescription></div>
+                        link="/vst/spacer"></ProjectVSTDescription></div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
-                        src="/portfolio/plugins/plugin3.png"
+                        src="/plugins/plugin3.png"
                         alt="spacer"
                         width={16}
                         height={9}
@@ -98,7 +98,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
                         <ProjectVSTDescription
                             description={panczDescription}
-                            link="/portfolio/vst/spacer"></ProjectVSTDescription>
+                            link="/vst/spacer"></ProjectVSTDescription>
                     </div>
                 </ProjectVST>
 
@@ -112,7 +112,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={twoColProjectImgStyle}
-                            src="/portfolio/hobby/stn/main.png"
+                            src="/hobby/stn/main.png"
                             alt="stn"
                             width={1}
                             height={1}
@@ -121,7 +121,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/stn"
+                            link="/hobby/stn"
                         />
 
                     </ProjectUni>
@@ -132,7 +132,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/greverb/main.png"
+                            src="/hobby/greverb/main.png"
                             alt="greverb"
                             width={1}
                             height={1}
@@ -141,7 +141,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/greverb"
+                            link="/hobby/greverb"
                         />
 
                     </ProjectUni>
@@ -155,7 +155,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/banjo/main.png"
+                            src="/hobby/banjo/main.png"
                             alt="banjo"
                             width={1}
                             height={1}
@@ -164,7 +164,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/banjo"
+                            link="/hobby/banjo"
                         />
                     </ProjectUni>
 
@@ -176,7 +176,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={twoColProjectImgStyle}
-                            src="/portfolio/hobby/timbretoys/main.png"
+                            src="/hobby/timbretoys/main.png"
                             alt="timbretoys"
                             width={1}
                             height={1}
@@ -185,7 +185,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/timbretoys"
+                            link="/hobby/timbretoys"
                         />
 
                     </ProjectUni>
@@ -196,7 +196,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/roughness/main.png"
+                            src="/hobby/roughness/main.png"
                             alt="roughness"
                             width={1}
                             height={1}
@@ -205,7 +205,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/roughness"
+                            link="/hobby/roughness"
                         />
 
                     </ProjectUni>
@@ -216,7 +216,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/gluphone/main.jpg"
+                            src="/hobby/gluphone/main.jpg"
                             alt="gluphone"
                             width={1}
                             height={1}
@@ -225,7 +225,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/gluphone"
+                            link="/hobby/gluphone"
                         />
 
                     </ProjectUni>
@@ -237,7 +237,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/ai_hum/main.png"
+                            src="/hobby/ai_hum/main.png"
                             alt="emotions"
                             width={1}
                             height={1}
@@ -246,7 +246,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/ai_hum"
+                            link="/hobby/ai_hum"
                         />
 
                     </ProjectUni>
@@ -257,7 +257,7 @@ export default function Projects(props: { id: string }) {
                     >
                         <Image
                             className={oneColProjectImgStyle}
-                            src="/portfolio/hobby/mlme/main.png"
+                            src="/hobby/mlme/main.png"
                             alt="mlme"
                             width={1}
                             height={1}
@@ -266,7 +266,7 @@ export default function Projects(props: { id: string }) {
                         <ProjectUniDescription
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                            link="/portfolio/hobby/mlme"
+                            link="/hobby/mlme"
                         />
                     </ProjectUni>
                 </div>
@@ -279,7 +279,7 @@ export default function Projects(props: { id: string }) {
                 >
                     <Image
                         className={twoColProjectImgStyle}
-                        src="/portfolio/plugins/plugin1.png"
+                        src="/plugins/plugin1.png"
                         alt="ocs"
                         width={1}
                         height={1}
@@ -288,7 +288,7 @@ export default function Projects(props: { id: string }) {
                     <ProjectDevDescription
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        link="/portfolio/commercial/intakewise"
+                        link="/commercial/intakewise"
                     />
                 </ProjectDev>
             </div>
