@@ -2,7 +2,6 @@ import Image from "next/image"
 import { ProjectVST, ProjectVSTDescription, ProjectVSTHeader, ProjectVSTHeaderRotated } from "../components/project_vst"
 import { ProjectUni, ProjectUniDescription, ProjectUniHeader } from "../components/project_uni"
 import { ProjectDev, ProjectDevDescription, ProjectDevHeader } from "../components/project_dev"
-import { SeeMoreButton } from "../components/see_more_button"
 
 export default function Projects(props: { id: string }) {
     const oneColProjectDevStyle = "col-span-2 sm:col-span-1"
@@ -24,15 +23,17 @@ export default function Projects(props: { id: string }) {
                 {/* OCS-45 */}
                 <ProjectVST
                     id="OCS-45">
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex">
                         <ProjectVSTHeaderRotated
                             title="OCS-45"
                             direction={-1}></ProjectVSTHeaderRotated>
                     </div>
-                    <div className="hidden md:block"><ProjectVSTDescription
-                        description={panczDescription}
-                        link="portfolio/vst/ocs-45"
-                    ></ProjectVSTDescription></div>
+                    <div className="hidden md:flex text-justify">
+                        <ProjectVSTDescription
+                            description={panczDescription}
+                            link="portfolio/vst/ocs-45">
+                            </ProjectVSTDescription>
+                    </div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
                         src="/portfolio/plugins/plugin1.png"
@@ -40,7 +41,7 @@ export default function Projects(props: { id: string }) {
                         width={3440}
                         height={2171}
                     />
-                    <div className="md:hidden">
+                    <div className="md:hidden flex-col flex">
                         <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
                         <ProjectVSTDescription
                             description={panczDescription}
@@ -67,7 +68,7 @@ export default function Projects(props: { id: string }) {
                         description={panczDescription}
                         link="/portfolio/vst/pancz">
                     </ProjectVSTDescription>
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex">
                         <ProjectVSTHeaderRotated
                             title="Pancz"
                             direction={1}></ProjectVSTHeaderRotated>
@@ -78,14 +79,14 @@ export default function Projects(props: { id: string }) {
                 <ProjectVST
                     id="Spacer"
                 >
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex">
                         <ProjectVSTHeaderRotated
                             title="Spacer"
                             direction={-1}></ProjectVSTHeaderRotated>
                     </div>
-                    <div className="hidden md:block"><ProjectVSTDescription 
-                    description={panczDescription} 
-                    link="/portfolio/vst/spacer"></ProjectVSTDescription></div>
+                    <div className="hidden md:flex text-justify"><ProjectVSTDescription
+                        description={panczDescription}
+                        link="/portfolio/vst/spacer"></ProjectVSTDescription></div>
                     <Image
                         className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
                         src="/portfolio/plugins/plugin3.png"
@@ -93,11 +94,11 @@ export default function Projects(props: { id: string }) {
                         width={16}
                         height={9}
                     />
-                    <div className="md:hidden">
+                    <div className="md:hidden flex-col flex">
                         <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
-                        <ProjectVSTDescription 
-                        description={panczDescription} 
-                        link="/portfolio/vst/spacer"></ProjectVSTDescription>
+                        <ProjectVSTDescription
+                            description={panczDescription}
+                            link="/portfolio/vst/spacer"></ProjectVSTDescription>
                     </div>
                 </ProjectVST>
 
