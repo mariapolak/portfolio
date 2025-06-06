@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../app/navbar";
-import Footer from "../app/footer";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 export const metadata: Metadata = {
   title: "Portfolio | Maria Polak",

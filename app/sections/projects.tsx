@@ -1,7 +1,7 @@
 import Image from "next/image"
-import { ProjectVST, ProjectVSTDescription, ProjectVSTHeader, ProjectVSTHeaderRotated } from "../components/project_vst"
-import { ProjectUni, ProjectUniDescription, ProjectUniHeader } from "../components/project_uni"
-import { ProjectDev, ProjectDevDescription, ProjectDevHeader } from "../components/project_dev"
+import { ProjectVST, ProjectVSTDescription, ProjectVSTHeader, ProjectVSTHeaderRotated } from "@/components/project_vst"
+import { ProjectUni, ProjectUniDescription, ProjectUniHeader } from "@/components/project_uni"
+import { ProjectDev, ProjectDevDescription, ProjectDevHeader } from "@/components/project_dev"
 
 export default function Projects(props: { id: string }) {
     const oneColProjectDevStyle = "col-span-2 sm:col-span-1"

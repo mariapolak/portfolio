@@ -2,7 +2,7 @@
 import Hero from "./sections/hero";
 import About from "./sections/about";
 import Projects from "./sections/projects";
-import RootLayout from "@/components/layout";
+import RootLayout from "@/app/layout";
 
 export default function Home() {
   return (
