@@ -31,7 +31,7 @@ export default function Projects(props: { id: string }) {
                     <div className="hidden md:flex text-justify">
                         <ProjectVSTDescription
                             description={panczDescription}
-                            link="portfolio/vst/ocs-45">
+                            link="/vst/ocs-45">
                             </ProjectVSTDescription>
                     </div>
                     <Image

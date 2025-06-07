@@ -1,6 +1,6 @@
 # Next.js GitHub Pages
 
-Deploy Next.js to GitHub Pages with GitHub Actions. [View the deployed app](https://gregrickaby.github.io/portfolio/) 🚀
+Deploy Next.js to GitHub Pages with GitHub Actions. [View the deployed app](https://mariapolak.github.io//) 🚀
 
 > ⚠️ Heads up! GitHub Pages _does not_ support serverless or edge functions. This means dynamic functionality will be disabled. See all the [unsupported features](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#unsupported-features).
 
@@ -71,7 +71,7 @@ Next, you will need to add the base path to images in `page.tsx` file. This is r
 
 ```tsx
 <Image
-  src="/portfolio/vercel.svg"
+  src="/vercel.svg"
   alt="Vercel Logo"
   className={styles.vercelLogo}
   width={100}
