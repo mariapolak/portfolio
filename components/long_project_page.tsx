@@ -11,18 +11,11 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
     const styles = {
         titleStyleDesktop: "text-4xl font-bold mb-5 hidden lg:block",
         titleStyleMobile: "text-4xl font-bold mb-5 lg:hidden order-1",
-        vercelLogo: "h-6 w-auto lg:absolute lg:bottom-10 lg:right-10",
-        subsectionHeaderStyle: "text-2xl mb-3 underline decoration-gray-200 decoration-2 underline-offset-6 pb-1",
-        subsectionHeaderStyleLeft: "text-2xl mb-3 underline decoration-gray-200 decoration-2 underline-offset-6 pb-1 w-full lg:w-5/7",
+        subsectionHeaderStyle: "text-2xl mb-3 underline decoration-gray-400 decoration-1 underline-offset-6 pb-1",
+        subsectionHeaderStyleLeft: "text-2xl mb-3 underline decoration-gray-400 decoration-1 underline-offset-6 pb-1 w-full lg:w-5/7",
         paragraphStyle: "text-justify text-xs w-full lg:w-5/7",
         galleryImageStyle: "h-auto w-full rounded-lg"
     }
-    // const titleStyleMobile = "text-4xl font-bold mb-5 lg:hidden order-1";
-    // const titleStyleDesktop = "text-4xl font-bold mb-5 hidden lg:block";
-    // const subsectionHeaderStyle = "text-2xl mb-3 underline decoration-gray-200 decoration-2 underline-offset-6 pb-1";
-    // const subsectionHeaderStyleLeft = subsectionHeaderStyle + " w-full lg:w-5/7"
-    // const paragraphStyle = "text-justify text-xs w-full lg:w-5/7";
-    // const galleryImageStyle = "h-auto w-full rounded-lg";
 
     const galleryImages = [
         "/plugins/ocs/1.webp",
@@ -46,9 +39,8 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
 
     return (
         <ProjectLayout>
-            <div className="flex flex-col w-full pt-[8vh] pb-[10vh] px-5 md:px-[8%] gap-10 ">
-                <div className="flex flex-col lg:flex-row h-[calc(100vh-10vh)] gap-10">
-
+            <div className="flex flex-col w-full pt-[8vh] pb-[10vh] px-5 md:px-[8%] gap-10">
+                <div className="flex flex-col lg:flex-row lg:h-[calc(100vh-10vh)] gap-10">
                     <h1 className={styles.titleStyleMobile}>{title}.</h1>
                     <div className="flex flex-col gap-5 justify-between w-full lg:w-4/7 pb-[10vh] lg:order-first order-3">
                         <div className="flex flex-col justify-start gap-5">
@@ -71,10 +63,22 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                         </div>
                         {/* Extra */}
                         <div className="flex-col flex w-full items-end relative">
-                            <div className="absolute block bottom-[-10px] left-[-20px] text-gray-500">
-                                <svg width="40" height="260" viewBox="0 0 40 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 5V245" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <path d="M10 235L20 245L30 235" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            {/* Arrow See More */}
+                            <div className="absolute hidden lg:flex bottom-[-10px] left-[-10px] flex flex-col items-center">
+                                <span
+                                    className="mb-2 text-xs tracking-widest"
+                                    style={{
+                                        writingMode: "vertical-rl",
+                                        transform: "rotate(-180deg)",
+                                        whiteSpace: "nowrap",
+                                        letterSpacing: "0.2em",
+                                    }}
+                                >
+                                    SCROLL TO SEE MORE
+                                </span>
+                                <svg width="40" height="130" viewBox="0 0 40 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
+                                    <path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                                    <path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
                             <h2 className={styles.subsectionHeaderStyleLeft}>EXTRA</h2>
@@ -113,25 +117,29 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {/* Gallery Images */}
-                    {galleryCols.map((colImages, colIdx) => (
-                        <div key={colIdx} className="grid gap-4">
-                            {colImages.map((imgSrc, imgIdx) => (
-                                <div key={imgIdx} className="">
-                                    <Image
-                                        className={styles.galleryImageStyle}
-                                        src={imgSrc}
-                                        alt=""
-                                        width={1}
-                                        height={1}
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
+                <div className="flex flex-col items-center">
+                    <h2 className={styles.subsectionHeaderStyle}>GALLERY</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {/* Gallery Images */}
+                        {galleryCols.map((colImages, colIdx) => (
+                            <div key={colIdx} className="grid gap-4">
+                                {colImages.map((imgSrc, imgIdx) => (
+                                    <div key={imgIdx} className="">
+                                        <Image
+                                            className={styles.galleryImageStyle}
+                                            src={imgSrc}
+                                            alt=""
+                                            width={1}
+                                            height={1}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
 
+                    </div>
                 </div>
+
             </div>
         </ProjectLayout>
 

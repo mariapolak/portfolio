@@ -2,7 +2,7 @@ import { SeeMoreButton } from "./see_more_button"
 
 export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
     return (
-        <div id={prop.id} className="flex flex-col w-6/7 bg-primary rounded-xl">
+        <div id={prop.id} className="flex flex-col w-6/7 py-2">
             <div className="flex flex-col md:flex-row items-center gap-3 p-5 md:py-5 md:px-3 ">
                 {prop.children}
             </div>

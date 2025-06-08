@@ -2,7 +2,7 @@ import { SeeMoreButton } from "./see_more_button"
 
 export function ProjectUni(prop: { id: string, className?: string, children: React.ReactNode }) {
     return (
-        <div id={prop.id} className={`flex flex-col bg-primary rounded-xl ${prop.className}`}>
+        <div id={prop.id} className={`flex flex-col bg-primary ${prop.className}`}>
             <div className="flex flex-col items-center gap-3 p-5">
                 {prop.children}
             </div>
@@ -12,7 +12,9 @@ export function ProjectUni(prop: { id: string, className?: string, children: Rea
 
 export function ProjectUniHeader({ title }: { title: string }) {
     return (
-        <h3 className="text-xl">{title}</h3>
+        <div className="min-h-12 justify-center items-center flex border-b border-gray-400 w-full">
+            <h3 className="font-bold">{title}</h3>
+        </div>
     )
 }
 

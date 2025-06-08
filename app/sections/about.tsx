@@ -1,8 +1,9 @@
+import SectionHeader from "@/components/headers/section_header";
 
 export default function About(props: { id: string }) {
     return (
         <section className="relative bg-primary dark:bg-gray-900 dark:text-white text-center h-screen z-10">
-            <h1 className="sticky pt-5 top-0 text-3xl font-bold w-full">About Me</h1>
+            <SectionHeader title="About Me" id={props.id} />
 
             <div className="flex items-center justify-center h-screen lg:px-5" id={props.id}>
                 <div className="w-4/5">
