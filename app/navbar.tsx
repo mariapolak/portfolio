@@ -20,7 +20,7 @@ export default function Navbar() {
         <div>
             <div className="lg:hidden">
                 {/* Icon for Mobile Menu */}
-                <div className="fixed top-0 right-0 p-4  z-50">
+                <div className="fixed top-0 right-0 p-4 z-50">
                     <button
                         className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center 
                         align-middle text-xs font-medium uppercase text-inherit
@@ -69,7 +69,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:block fixed top-0 flex h-[calc(100vh-20rem)] w-full max-w-[20rem] flex-col pt-4 pl-2 text-gray-700">
+            <div className="hidden lg:block fixed top-0 flex h-[calc(100vh-20rem)] w-full max-w-[20rem] flex-col pt-4 pl-2 text-gray-700 z-50">
                 <nav className="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal">
                     {navItems.map((item, index) => (
                         <div role="button" key={index}

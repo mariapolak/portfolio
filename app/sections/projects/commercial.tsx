@@ -10,6 +10,11 @@ export default function CommercialProjects() {
         twoColProjectDevStyle: "col-span-2"
     }
 
+    const descriptions = {
+        intakewise: `A full-stack multi-tenant web app using ASP.NET MVC which allows users to monitor the state of wells and water tanks, and alerts about sudden changes. 
+        The app is designed to be used by multiple companies, each with its own set of users and data. It includes features such as user management, data visualization, and real-time notifications.`,
+    }
+
     return (
         <ProjectDev
             id="intakewise"
@@ -24,8 +29,7 @@ export default function CommercialProjects() {
             />
             <ProjectDevHeader title="ıntakewıse" />
             <ProjectDevDescription
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                description={descriptions.intakewise}
                 link="/commercial/intakewise"
             />
         </ProjectDev>

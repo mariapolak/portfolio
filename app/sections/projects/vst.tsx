@@ -2,9 +2,11 @@ import { ProjectVST, ProjectVSTDescription, ProjectVSTHeader, ProjectVSTHeaderRo
 import Image from "next/image"
 
 export default function VSTProjects() {
-    const ocsDescription = `OCS-45 is a VST plugin that provides a unique sound processing experience. It is designed to enhance audio production with its advanced features and intuitive interface.`;
-    const panczDescription = `Pancz is a versatile VST plugin that offers a wide range of sound manipulation capabilities. It is perfect for musicians and producers looking to add depth and character to their audio projects.`;
-    const spacerDescription = `Spacer is a powerful VST plugin that allows users to create spacious and immersive soundscapes. It is ideal for film scoring, game audio, and any project that requires a sense of depth in sound.`
+    const descriptions = {
+        ocs: "OCS-45 is a sleek cassette-tape simulator that injects tracks with authentic lo-fi character. It features four vintage tape types, modulation quirks like wow, flutter, dropouts, hiss, and five distinct distortion modes—all with independent Dry/Wet and bypass controls for maximum creative flexibility.",
+        pancz: `Pancz is an audio plugin equipped with a powerful multi-band transient shaper, clipping tool, precise waveform analyzer and additional tone manipulation effects. It uses complex audio processing to directly control the shape of the sound. With its convenient waveform window and a “cut line” you are able to visually manipulate the sound making it look and sound the way you want it to.`,
+        spacer: `Spacer, a modular creative effects station where time and space are united as one. Spacer has five effects modules which can be linked in any order to generate infinite FX combinations, but are also designed to work as independent processing stations in their own right. It creates dreamlike overtones, shifting soundscapes or contemporary ambiences.`
+    }
 
     return (
         <section className="flex flex-col items-center divide-gray-400 divide-1 divide-y">
@@ -18,7 +20,7 @@ export default function VSTProjects() {
                 </div>
                 <div className="hidden md:flex text-justify">
                     <ProjectVSTDescription
-                        description={ocsDescription}
+                        description={descriptions.ocs}
                         link="/vst/ocs-45">
                     </ProjectVSTDescription>
                 </div>
@@ -32,7 +34,7 @@ export default function VSTProjects() {
                 <div className="md:hidden flex-col flex">
                     <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
                     <ProjectVSTDescription
-                        description={ocsDescription}
+                        description={descriptions.ocs}
                         link="/vst/ocs-45"
                     ></ProjectVSTDescription>
                 </div>
@@ -53,7 +55,7 @@ export default function VSTProjects() {
                         title="Pancz"></ProjectVSTHeader>
                 </div>
                 <ProjectVSTDescription
-                    description={panczDescription}
+                    description={descriptions.pancz}
                     link="/vst/pancz">
                 </ProjectVSTDescription>
                 <div className="hidden md:flex">
@@ -73,7 +75,7 @@ export default function VSTProjects() {
                         direction={-1}></ProjectVSTHeaderRotated>
                 </div>
                 <div className="hidden md:flex text-justify"><ProjectVSTDescription
-                    description={spacerDescription}
+                    description={descriptions.spacer}
                     link="/vst/spacer"></ProjectVSTDescription></div>
                 <Image
                     className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
@@ -85,7 +87,7 @@ export default function VSTProjects() {
                 <div className="md:hidden flex-col flex">
                     <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
                     <ProjectVSTDescription
-                        description={spacerDescription}
+                        description={descriptions.spacer}
                         link="/vst/spacer"></ProjectVSTDescription>
                 </div>
             </ProjectVST>
