@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { RefObject, useState } from "react";
+import { useInView } from "motion/react";
 
-export default function Navbar() {
+export default function Navbar(props: {homeRef: RefObject<Element | null>, aboutRef: RefObject<Element | null>, projectsRef: RefObject<Element | null>, contactRef: RefObject<Element | null>}) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -10,10 +11,10 @@ export default function Navbar() {
 
     // Navigation items array
     const navItems = [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
-        { name: "Contact", href: "#contact" },
+        { name: "Home", href: "#home", inView: useInView(props.homeRef, {amount: 0.5}) },
+        { name: "About", href: "#about", inView: useInView(props.aboutRef, {margin: "-50% 0px -50% 0px"}) },
+        { name: "Projects", href: "#projects", inView: useInView(props.projectsRef, {margin: "-50% 0px -50% 0px"}) },
+        { name: "Contact", href: "#contact", inView: useInView(props.contactRef, {amount: 0.5}) },
     ];
 
     return (
@@ -57,7 +58,7 @@ export default function Navbar() {
                                 className="flex items-center hover:text-gray-400 hover:underline underline-offset-5 active:text-blue-500 relative pl-5"
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
-                                {typeof window !== "undefined" && window.location.hash === item.href && (
+                                {item.inView && (
                                     <span className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-secondary rounded-full"></span>
                                 )}
                                 0{index} {item.name}
@@ -79,7 +80,7 @@ export default function Navbar() {
                                 className="flex items-center hover:text-gray-400 hover:underline underline-offset-5 active:text-blue-500 relative pl-5"
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
-                                {typeof window !== "undefined" && window.location.hash === item.href && (
+                                {item.inView && (
                                     <span className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-secondary rounded-full"></span>
                                 )}
                                 0{index} {item.name}

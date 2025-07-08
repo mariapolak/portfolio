@@ -1,8 +1,8 @@
 import Image from "next/image"
 
-export default function Hero(props: { id: string }) {
+export default function Hero(props: { id: string, ref: React.RefObject<HTMLDivElement | null> }) {
     return (
-        <section className="dark:bg-gray-900 dark:text-white z-10">
+        <section className="dark:bg-gray-900 dark:text-white z-10" ref={props.ref}>
             <div className="container mx-auto flex items-center justify-center h-screen relative" id={props.id}>
                 <div className="flex flex-col items-center lg:justify-normal lg:flex-row gap-5 lg:gap-10 lg:p-5">
                     <div className="flex flex-col items-start lg:items-end justify-center w-4/5 sm:w-1/2">
