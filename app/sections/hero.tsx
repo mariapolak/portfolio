@@ -13,7 +13,7 @@ export default function Hero(props: { id: string, ref: React.RefObject<HTMLDivEl
                     </div>
                     <div className="flex gap-6 rounded-2xl justify-start w-4/5 sm:w-1/2 lg:w-1/3">
                         <Image
-                            className="shadow-xl bg-white sm:p-7 rounded-md md:w-2/3 lg:w-full"
+                            className="shadow-xl rounded-md md:w-2/3 md:w-full"
                             src="/me.jpeg"
                             alt="me"
                             width={1024}

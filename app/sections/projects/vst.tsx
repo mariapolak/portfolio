@@ -3,9 +3,9 @@ import Image from "next/image"
 
 export default function VSTProjects() {
     const descriptions = {
-        ocs: "OCS-45 is a sleek cassette-tape simulator that injects tracks with authentic lo-fi character. It features four vintage tape types, modulation quirks like wow, flutter, dropouts, hiss, and five distinct distortion modes—all with independent Dry/Wet and bypass controls for maximum creative flexibility.",
-        pancz: `Pancz is an audio plugin equipped with a powerful multi-band transient shaper, clipping tool, precise waveform analyzer and additional tone manipulation effects. It uses complex audio processing to directly control the shape of the sound. With its convenient waveform window and a “cut line” you are able to visually manipulate the sound making it look and sound the way you want it to.`,
-        spacer: `Spacer, a modular creative effects station where time and space are united as one. Spacer has five effects modules which can be linked in any order to generate infinite FX combinations, but are also designed to work as independent processing stations in their own right. It creates dreamlike overtones, shifting soundscapes or contemporary ambiences.`
+        ocs: "OCS-45 is a sleek cassette-tape simulator that injects tracks with authentic lo-fi character. It features four vintage tape types, modulation quirks like wow, flutter, dropouts, hiss, and five distinct distortion modes—all with independent Dry/Wet and bypass controls for maximum creative flexibility. ",
+        pancz: `Pancz is an audio plugin equipped with a powerful multi-band transient shaper, clipping tool, precise waveform analyzer and additional tone manipulation effects. It uses complex audio processing to directly control the shape of the sound. With its convenient waveform window and a “cut line” you are able to visually manipulate the sound making it look and sound the way you want it to. `,
+        spacer: `Spacer, a modular creative effects station where time and space are united as one. Spacer has five effects modules which can be linked in any order to generate infinite FX combinations, but are also designed to work as independent processing stations in their own right. It creates dreamlike overtones, shifting soundscapes or contemporary ambiences. `
     }
 
     return (

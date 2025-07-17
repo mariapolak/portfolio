@@ -8,15 +8,15 @@ export default function HobbyProjects() {
     }
 
     const descriptions = {
-        pstsm: `Comprehensive evaluation of PS and TSM algorithms, focusing on their perceptual quality, computational performance, and impact on machine learning tasks, particularly speech separation.`,
-        stn: `A novel real-time pitch-shifting algorithm designed for complex audio signals. The project integrates fuzzy STN decomposition with specialized processing pipelines for sines, transient, and noise components.`,
-        greverb: `Hand movement controlled grain delay effect. The system leverages MediaPipe's real-time hand tracking capabilities, the system interprets hand movements and maps geometric descriptors to manipulate audio effect parameters.`,
-        banjo: `A finite difference physical model of a banjo. Implemented in Python, it uses the string equation to simulate the string's vibrations and the membrane's response, creating a realistic banjo sound.`,
-        timbretoys: `A timbre manipulation tool that allows the users to interact with a timbre the same way they would interact with a physical object. The main inspiration behind the project was a sonic interaction and a live performance`,
-        gluphone: `A new digital musical instrument - the Gluphone. The instrument design tries to overcome limitations of classical instruments, by providing continuous control over pitch and volume.`,
+        pstsm: `Comprehensive evaluation of PS and TSM algorithms, focusing on their perceptual quality, computational performance, and impact on machine learning tasks, particularly speech separation. `,
+        stn: `A novel real-time pitch-shifting algorithm designed for complex audio signals. The project integrates fuzzy STN decomposition with specialized processing pipelines for sines, transient, and noise components. `,
+        greverb: `Hand movement controlled grain delay effect. The system leverages MediaPipe's real-time hand tracking capabilities, the system interprets hand movements and maps geometric descriptors to manipulate audio effect parameters. `,
+        banjo: `A finite difference physical model of a banjo. Implemented in Python, it uses the string equation to simulate the string's vibrations and the membrane's response, creating a realistic banjo sound. `,
+        timbretoys: `A timbre manipulation tool that allows the users to interact with a timbre the same way they would interact with a physical object. The main inspiration behind the project was a sonic interaction and a live performance. `,
+        gluphone: `A new digital musical instrument - the Gluphone. The instrument design tries to overcome limitations of classical instruments, by providing continuous control over pitch and volume. `,
         roughness: `A real-time implementation of a vocal distortion and roughness effect, described in detail in a paper by Gentilucci, Marta, Luc Ardaillon, and Marco Liuni. The effect was implemented as an audio effect plugin using the JUCE framework. `,
-        emotions: `Experiment which compares emotions induced through music composed by two different types of composers, namely AI and human. The experiment was conducted in a form of an online survey and the participants were recruited through social-media.`,
-        mlme: `A lightweight CNN for musical instrument recognition in polyphonic audio signals. Utilizing the IRMAS dataset, a subset of seven instruments was selected for classification using spectrogram-based image inputs.`
+        emotions: `Experiment which compares emotions induced through music composed by two different types of composers, namely AI and human. The experiment was conducted in a form of an online survey and the participants were recruited through social-media. `,
+        mlme: `A lightweight CNN for musical instrument recognition in polyphonic audio signals. Utilizing the IRMAS dataset, a subset of seven instruments was selected for classification using spectrogram-based image inputs. `
     }
 
     return (

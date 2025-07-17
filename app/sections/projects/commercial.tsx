@@ -10,8 +10,8 @@ export default function CommercialProjects() {
 
     const descriptions = {
         intakewise: `A full-stack multi-tenant web app using ASP.NET MVC which allows users to monitor the state of wells and water tanks, and alerts about sudden changes. 
-        The app is designed to be used by multiple companies, each with its own set of users and data. It includes features such as user management, data visualization, and real-time notifications.`,
-        flashsoft: `A desktop application designed to streamline the process of analyzing pdf product cards and extracting relevant information to excel files. The application uses advanced algorithms to parse the pdf files and extract the necessary data.`,
+        The app is designed to be used by multiple companies, each with its own set of users and data. It includes features such as user management, data visualization, and real-time notifications. `,
+        flashsoft: `A desktop application designed to streamline the process of analyzing pdf product cards and extracting relevant information to excel files. The application uses advanced algorithms to parse the pdf files and extract the necessary data. `,
     }
 
     return (

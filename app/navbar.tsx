@@ -14,7 +14,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
         { name: "Home", href: "#home", inView: useInView(props.homeRef, {amount: 0.5}) },
         { name: "About", href: "#about", inView: useInView(props.aboutRef, {margin: "-50% 0px -50% 0px"}) },
         { name: "Projects", href: "#projects", inView: useInView(props.projectsRef, {margin: "-50% 0px -50% 0px"}) },
-        { name: "Contact", href: "#contact", inView: useInView(props.contactRef, {amount: 0.5}) },
+        { name: "Contact", href: "#contact", inView: useInView(props.contactRef, {amount: 1}) },
     ];
 
     return (
