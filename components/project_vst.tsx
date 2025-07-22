@@ -1,12 +1,14 @@
 import { SeeMoreButton } from "./see_more_button"
+import { motion } from "framer-motion";
 
 export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
     return (
-        <div id={prop.id} className="flex flex-col w-6/7 py-2">
+        <motion.div id={prop.id} className="flex flex-col w-6/7 py-2"
+            whileHover={{ scale: 1.01, transition: { duration: 0.5 }, }}>
             <div className="flex flex-col md:flex-row items-center gap-3 p-5 md:py-5 md:px-3 ">
                 {prop.children}
             </div>
-        </div>
+        </motion.div>
     )
 }
 

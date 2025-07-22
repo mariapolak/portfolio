@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProjectLayout from "./layout_project";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function LongProjectPage({ title, image, why, achieved, extra, skills, links }:
     {
@@ -77,8 +78,14 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                                     SCROLL TO SEE MORE
                                 </span>
                                 <svg width="40" height="130" viewBox="0 0 40 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
-                                    <path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    <motion.path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" 
+                                        initial={{ pathLength: 0 }} 
+                                        animate={{ pathLength: 1 }} 
+                                        transition={{ duration: 0.75 }}/>
+                                    <motion.path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
+                                        initial={{ pathLength: 0 }} 
+                                        animate={{ pathLength: 1 }} 
+                                        transition={{ duration: 0.75 }}/>
                                 </svg>
                             </div>
                             <h2 className={styles.subsectionHeaderStyleLeft}>EXTRA</h2>

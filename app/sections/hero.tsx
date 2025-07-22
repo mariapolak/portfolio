@@ -1,6 +1,19 @@
 import Image from "next/image"
+import { motion, Variants } from "framer-motion";
 
 export default function Hero(props: { id: string, ref: React.RefObject<HTMLDivElement | null> }) {
+    const scrollVariants: Variants = {
+        jump: {
+            y: -15,
+            transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut",
+            },
+        },
+    }
+
     return (
         <section className="dark:bg-gray-900 dark:text-white z-10" ref={props.ref}>
             <div className="container mx-auto flex items-center justify-center h-screen relative" id={props.id}>
@@ -22,20 +35,23 @@ export default function Hero(props: { id: string, ref: React.RefObject<HTMLDivEl
                     </div>
                 </div>
                 {/* Arrow See More */}
-                <div className="absolute hidden lg:flex bottom-[15px] right-[15px] flex flex-col items-center">
-                    <span
+                <motion.div className="absolute hidden lg:flex bottom-[15px] right-[15px] flex flex-col items-center"
+                    animate="jump">
+                    <motion.span
                         className="text-xs tracking-widest"
                         style={{
                             whiteSpace: "nowrap",
                             letterSpacing: "0.2em",
                         }}
+                        variants={scrollVariants}
                     >
                         SCROLL
-                    </span>
-                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
+                    </motion.span>
+                    <motion.svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400"
+                    variants={scrollVariants}>
                         <path d="M8 8L24 20L40 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                </div>
+                    </motion.svg>
+                </motion.div>
             </div>
         </section>
     )
