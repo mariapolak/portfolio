@@ -1,63 +1,31 @@
-"use client"
+import LongProjectPage from "@/components/long_project_page";
 
-import { animate, stagger } from "motion"
-import { splitText } from "motion-plus"
-import { useEffect, useRef } from "react"
+export default function Pancz() {
+    const title = "Pancz";
+    const why = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const achieved = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const extra = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const skills = ["JUCE Framework", "C++17", "Python", "Prototyping", "Signal Processing", "Multi-OS Development", "Code Release", "Collaboration", "Code Review", "Azure", "Git"];
+    const links = [
+        { name: "Official Website", href: "https://spectral-plugins.com/" }, 
+        { name: "YouTube Demo", href: "https://www.youtube.com/watch?v=b1ZPGlupFGI"},
+        { name: "KVR Audio", href: "https://www.kvraudio.com/product/pancz-by-spectral-plugins"}];
 
-export default function SplitText() {
-    const containerRef = useRef<HTMLDivElement>(null)
-
-    useEffect(() => {
-        document.fonts.ready.then(() => {
-            if (!containerRef.current) return
-
-            // Hide the container until the fonts are loaded
-            containerRef.current.style.visibility = "visible"
-
-            const { words } = splitText(
-                containerRef.current.querySelector("h1")!
-            )
-
-            // Animate the words in the h1
-            animate(
-                words,
-                { opacity: [0, 1], y: [10, 0] },
-                {
-                    type: "spring",
-                    duration: 2,
-                    bounce: 0,
-                    delay: stagger(0.05),
-                }
-            )
-        })
-    }, [])
+    const galleryImages = [
+        "/plugins/pancz/1.png",
+        "/plugins/pancz/2.png"
+    ];
 
     return (
-        <div className="container" ref={containerRef}>
-            <h1 className="h1">
-                Level up your animations with the all-in membership
-            </h1>
-            <Stylesheet />
-        </div>
-    )
-}
-
-function Stylesheet() {
-    return (
-        <style>{`
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                max-width: 420px;
-                text-align: left;
-                visibility: hidden;
-            }
-
-            .split-word {
-                will-change: transform, opacity;
-            }
-        `}</style>
-    )
+        <LongProjectPage
+            title={title}
+            image="/plugins/plugin2.png"
+            why={why}
+            achieved={achieved}
+            extra={extra}
+            skills={skills}
+            links={links}
+            galleryImages={galleryImages}
+        />
+    );
 }

@@ -1,61 +1,35 @@
-"use client"
-
-import { motion, AnimatePresence } from "motion/react"
-import { useState } from "react"
+import LongProjectPage from "@/components/long_project_page";
 
 export default function Spacer() {
-    // var isLink = prop.link !== undefined && prop.link !== null && prop.link !== "" ? true : false;
+    const title = "Spacer";
+    const why = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const achieved = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const extra = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const skills = ["JUCE Framework", "C++17", "Python", "Prototyping", "Signal Processing", "Multi-OS Development", "Code Release", "Collaboration", "Code Review", "Azure", "Git"];
+    const links = [
+        { name: "Official Website", href: "https://spectral-plugins.com/" }, 
+        { name: "YouTube Demo", href: "https://www.youtube.com/watch?v=QtNnskjqnQ8&t=853s&ab_channel=SpectralPlugins"},
+        { name: "KVR Audio", href: "https://www.kvraudio.com/product/spacer-by-spectral-plugins"}];
 
-    const [isOpen, setOpen] = useState(false)
+    const galleryImages = [
+        "/plugins/spacer/1.png",
+        "/plugins/spacer/2.png",
+        "/plugins/spacer/3.png",
+        "/plugins/spacer/4.png",
+        "/plugins/spacer/5.png",
+        "/plugins/spacer/6.png"
+    ];
 
     return (
-        <>
-            <AnimatePresence>
-            {isOpen && (
-                <motion.div
-                key="overlay"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                style={{
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    width: "100vw",
-                    height: "100vh",
-                    background: "black",
-                    zIndex: 4,
-                }}
-                />
-            )}
-            </AnimatePresence>
-            <motion.div
-            whileTap={{ scale: 0.95 }}
-            layout
-            style={
-                isOpen
-                ? {
-                    position: "fixed",
-                    top: "10vh",
-                    left: "10%",
-                    width: "80%",
-                    height: "80vh",
-                    zIndex: 5,
-                }
-                : {}
-            }
-            onClick={() => setOpen(!isOpen)}
-            className={`flex flex-col bg-primary rounded-xl `}
-            >
-            <div className="flex flex-col items-center gap-3 p-5">
-                {/* <h3 className="text-xl">Spacer</h3>
-                <p className="text-justify text-xs w-full">TEST</p> */}
-            </div>
-            </motion.div>
-            {isOpen && (
-            <div className={`flex flex-col `}></div>
-            )}
-        </>
-    )
+        <LongProjectPage
+            title={title}
+            image="/plugins/plugin3.png"
+            why={why}
+            achieved={achieved}
+            extra={extra}
+            skills={skills}
+            links={links}
+            galleryImages={galleryImages}
+        />
+    );
 }

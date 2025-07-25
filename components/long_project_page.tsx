@@ -3,10 +3,10 @@ import ProjectLayout from "./layout_project";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function LongProjectPage({ title, image, why, achieved, extra, skills, links }:
+export default function LongProjectPage({ title, image, why, achieved, extra, skills, links, galleryImages }:
     {
         title: string; image: string; why: string; achieved: string; extra: string;
-        skills: string[]; links: { name: string; href: string }[]
+        skills: string[]; links: { name: string; href: string }[]; galleryImages: string[]
     }) {
 
     const styles = {
@@ -17,21 +17,6 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
         paragraphStyle: "text-justify text-xs w-full lg:w-5/7",
         galleryImageStyle: "h-auto w-full rounded-lg"
     }
-
-    const galleryImages = [
-        "/plugins/ocs/1.webp",
-        "/plugins/ocs/2.webp",
-        "/plugins/ocs/3.webp",
-        "/plugins/ocs/4.webp",
-        "/plugins/ocs/5.webp",
-        "/plugins/ocs/6.png",
-        "/plugins/ocs/7.png",
-        "/plugins/ocs/8.png",
-        "/plugins/ocs/9.png",
-        "/plugins/ocs/10.png",
-        "/plugins/ocs/11.png",
-        "/plugins/ocs/12.png",
-    ];
 
     const columns = 4;
     const galleryCols = Array.from({ length: columns }, (_, colIdx) =>
